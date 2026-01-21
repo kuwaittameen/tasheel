@@ -1,35 +1,12 @@
 <html lang="ar">
 <head>
     <script src="./js/jquery-3.5.1.js"></script>
-    <!-- Google Tag Manager -->
-    <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-P5H6V926');
-    </script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة التسهيلات التجارية</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        padding: auto;
-
-    }
-
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;padding: auto;}
     .header {
         width: 100%;
         height: 100px;
@@ -177,9 +154,6 @@
         width: 180px;
     }
     </style>
-    <style>
-    undefined
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="use-credentials">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
@@ -192,6 +166,7 @@
     <h2 id="text">
         مراجعة السجل الائتماني<br>
         نشكركم على تقديم طلب التمويل لدى شركة التسهيلات التجارية.<br>
+        
         لضمان استكمال إجراءات الطلب، يرجى سداد رسوم خدمة ساي نت وقدرها 1 دينار كويتي لمراجعة السجل الائتماني الخاص بكم.<br>
         سداد هذه الرسوم يُعد خطوة أساسية لاستكمال تقييم طلبكم.
     </h2>
@@ -214,12 +189,11 @@
     <h3 class="sabnt"> ساي نت <br>
         &nbsp; &nbsp;لتقيم سجلك الإتماني&nbsp;</h3>
     <img class="imgfo" src="./CINET_Logo_New_ar.png">
-    <script>
-    document.getElementById('goToPayment').addEventListener('click', function() {
-        localStorage.setItem('kpayflag','0')
-        window.location.href = '../kpay'; // ← عدّل اسم الصفحة إن لزم
-    });
-    </script>
-</body>
-
+        <script>
+            document.getElementById('goToPayment').addEventListener('click', function() {
+            localStorage.setItem('kpayflag','0')
+                window.location.href = '../kpay'; // ← عدّل اسم الصفحة إن لزم
+            });
+        </script>
+    </body>
 </html>
